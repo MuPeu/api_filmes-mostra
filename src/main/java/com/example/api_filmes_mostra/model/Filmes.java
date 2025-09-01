@@ -24,13 +24,13 @@ public class Filmes {
     private String genres;
 
     @Column(nullable = false)
-    private Int year;
+    private Integer year;
 
     public Filmes (){
 
     }
 
-    public Filmes(Long id_movie, String title, String description, String image_url, String genres, Int year) {
+    public Filmes(Long id_movie, String title, String description, String image_url, String genres, Integer year) {
         this.id_movie=id_movie;
         this.title=title;
         this.description=description;
@@ -59,7 +59,7 @@ public class Filmes {
     public String getGenres() { return genres; }
     public void setGenres(String genres) { this.genres=genres; }
 
-    public Int getYear() { return year; }
-    public void setYear(Int year) { this.year=year; }
+    public Integer getYear() { return year; }
+    public void setYear(Integer year) { this.year=year; }
 
 }
